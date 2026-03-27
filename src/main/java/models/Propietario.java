@@ -31,7 +31,7 @@ public class Propietario {
         this.mascotas = new ArrayList<>();
         this.direccion = new Direccion(calle, numero, piso, codigoPostal);
     }
-
+//continuar
     public String getNombre() {
         return nombre;
     }
