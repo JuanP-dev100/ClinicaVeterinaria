@@ -23,13 +23,13 @@ public class Propietario {
     public Propietario() {
     }
 
-    public Propietario(String nombre, int edad, int telefono, String email, ArrayList<Mascota> mascotas, Direccion direccion) {
+    public Propietario(String nombre, int edad, int telefono, String email, String calle, String numero, String piso, String codigoPostal) {
         this.nombre = nombre;
         this.edad = edad;
         this.telefono = telefono;
         this.email = email;
         this.mascotas = new ArrayList<>();
-        this.direccion = direccion;
+        this.direccion = new Direccion(calle, numero, piso, codigoPostal);
     }
 
     public String getNombre() {
