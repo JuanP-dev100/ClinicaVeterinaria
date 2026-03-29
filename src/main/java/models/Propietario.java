@@ -87,4 +87,8 @@ public class Propietario {
        return cedula;
    }
 
-}
+    public void agregarMascota(Mascota pelusa){
+     this.mascotas.add(pelusa);
+    }
+
+     }

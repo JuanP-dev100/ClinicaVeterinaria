@@ -86,11 +86,9 @@ public class Veterinario {
         this.especialidad = especialidad;
     }
     
-    public void recetar(String nombre, String dosis, String frecuencia){
-        Medicamento recetado = new Medicamento(nombre, dosis, frecuencia);
-        
-        this.receta.add.(recetado);
-        
+    public void recetar(Consulta consultaActual,Medicamento nuevoMed, String nombre, String dosis, String frecuencia){    
+        consultaActual.agregarMedicamentoConsulta(nuevoMed.getNombre(), dosis, frecuencia);
+    
     }
     
     
