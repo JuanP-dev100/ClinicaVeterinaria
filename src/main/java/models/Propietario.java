@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author UNICARTAGENA
  */
 public class Propietario {
-    
+    private int cedula;
     private String nombre;
     private int edad;
     private int telefono;
@@ -23,7 +23,8 @@ public class Propietario {
     public Propietario() {
     }
 
-    public Propietario(String nombre, int edad, int telefono, String email, String calle, String numero, String piso, String codigoPostal) {
+    public Propietario(int cedula, String nombre, int edad, int telefono, String email, String calle, String numero, String piso, String codigoPostal) {
+        this.cedula = cedula;
         this.nombre = nombre;
         this.edad = edad;
         this.telefono = telefono;
@@ -79,5 +80,11 @@ public class Propietario {
     public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
     }
-   
+   public void setCedula(int cedula) {
+        this.cedula = cedula;
+   }
+    public int getCedula(){
+       return cedula;
+   }
+
 }
